@@ -34,7 +34,7 @@ rootRef.on("value",
             issue = child.val();
             console.log(issue);
             var row = document.createElement("tr");
-            row.innerHTML = "<td>" + issue.severity + "</td><td>" + issue.description + "</td><td>" + 
+            row.innerHTML = "<td>" + issue.importance + "</td><td>" + issue.description + "</td><td>" + 
 
                "<select onchange='updateIssue(\"" + child.key + "\", this.value)'>" +
         "<option value='no'" + (issue.resolved=="no" ? " selected" : "") + ">no</option>" +
@@ -57,8 +57,8 @@ rootRef.on("value",
 
 // Task 5 ------------------------------------------
 
-function addNewIssue() {
-    const severity = document.getElementById("severity-dropdown").value;
+function addNewChore() {
+    const importance = document.getElementById("importance-dropdown").value;
     const description = document.getElementById("description-textfield").value;
     const resolved = document.getElementById("resolved-dropdown").value;
   
@@ -70,7 +70,7 @@ function addNewIssue() {
     rootRef.push ({
       description: description,
       resolved: resolved,
-      severity: severity
+      importance: importance
     });
   
     document.getElementById("description-textfield").value="";

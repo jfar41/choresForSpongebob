@@ -29,13 +29,13 @@ const rootRef = firebase.database().ref("chores/");
 // rootRef.push ({
 //   description: "Logo does not show up on screen 5",
 //   resolved: "yes",
-//   severity: "minor"
+//   importance: "minor"
 // });
 
 // rootRef.push ({
 //   description: "Screen flashes uh huh honney",
 //   resolved: "no",
-//   severity: "moderate"
+//   importance: "moderate"
 // });
 //Once succesful, can comment out above 2 push
 

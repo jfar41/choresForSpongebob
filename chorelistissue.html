@@ -30,12 +30,12 @@
 <div class="results-div">
   <table>
     <col width="15%"><col width="65%"><col width="10%"><col width="10%">
-    <thead class="highlight-cell"><th>Severity</th><th>Description</th><th>Resolved?</th><th>Delete</th></thead>
+    <thead class="highlight-cell"><th>Importance</th><th>Description</th><th>Resolved?</th><th>Delete</th></thead>
     <tbody id="list-table-body"></tbody>
 
     <tfoot class="empty-cell">
       <td>
-        <select id="severity-dropdown">
+        <select id="importance-dropdown">
           <option value="minor">minor</option>
           <option value="moderate">moderate</option>
           <option value="major">major</option>
@@ -54,7 +54,7 @@
     </tfoot>
   </table>
   <div class="button">
-    <input class="button btn btn-primary" value="Add New Issue" id="addButton" onclick="addNewIssue()" />
+    <input class="button btn btn-primary" value="Add New Chore" id="addButton" onclick="addNewChore()" />
   </div>
 </div>
 
